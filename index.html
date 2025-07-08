@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İngilizce Kelime Bilme Yarışı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+      <h1>Kelime Yazma Alıştırması</h1>
+      <div class="score-board">
+        ✅ Doğru: <span id="correct-count">0</span> |
+        ❌ Yanlış: <span id="wrong-count">0</span>
+      </div>
+      <div class="card" id="card">
+        <div id="english-word">Loading...</div>
+        <div id="correct-meaning" class="hidden">Doğru: <span id="turkish-word"></span></div>
+      </div>
+      <input 
+        type="text" 
+        id="answer-input" 
+        placeholder="Türkçesini yaz..." 
+        autocomplete="off"
+      />
+<div id="timer">⏱️ 20</div>
+<div id="end-message" class="hidden"></div>
+
+
+<button id="restart-btn" class="hidden">🔁 Tekrar</button>
+
+      <div id="congrats-message" class="hidden">🏆 5 Doğru Yaptın! Tebrik Ederim! 🎉</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+  
+</html>
